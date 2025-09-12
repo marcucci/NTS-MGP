@@ -2,38 +2,15 @@
 
 <!-- TOC START -->
 - [1.0 INTRODUCTION](#10-introduction)
-   * [Message Structure](#message-structure)
-   * [Character Rules](#character-rules)
-   * [Special Substitutions](#special-substitutions)
 - [1.1 EXAMPLE MESSAGE](#11-example-message)
 - [1.2 PREAMBLE PART](#12-preamble-part)
-   * [Preamble Components](#preamble-components)
-      + [1.2.1 Message Number (NR)](#121-message-number-nr)
-      + [1.2.2 Precedence (PREC)](#122-precedence-prec)
-      + [1.2.3 Handling Instructions \[HX\] - OPTIONAL](#123-handling-instructions-hx---optional)
-      + [1.2.4 Station of Origin (STN-ORIG)](#124-station-of-origin-stn-orig)
-      + [1.2.5 Check (CK)](#125-check-ck)
-      + [1.2.6 Place of Origin](#126-place-of-origin)
-      + [1.2.7 Time Filed \[TIME\] - OPTIONAL](#127-time-filed-time---optional)
-      + [1.2.8-1.2.9 Month/Day Filed (MON/DAY)](#128-129-monthday-filed-monday)
 - [1.3 ADDRESS PART](#13-address-part)
-   * [Special Addressing Cases](#special-addressing-cases)
 - [1.4 TEXT PART](#14-text-part)
-   * [Punctuation Rules](#punctuation-rules)
-   * [Word Group Counting](#word-group-counting)
-   * [ARRL Numbered Radiograms](#arrl-numbered-radiograms)
 - [1.5 SIGNATURE PART](#15-signature-part)
-   * [Signature Rules](#signature-rules)
 - [1.6 MESSAGE RECORDS](#16-message-records)
 - [1.7 ORIGINATING MESSAGES](#17-originating-messages)
-   * [Requirements](#requirements)
-   * [Legal Considerations](#legal-considerations)
 - [1.8 SERVICE MESSAGES](#18-service-messages)
-   * [ARL SIXTY SEVEN Format](#arl-sixty-seven-format)
-   * [Service Message Rules](#service-message-rules)
 - [1.9 ARRL NUMBERED RADIOGRAMS](#19-arrl-numbered-radiograms)
-   * [Group One - Emergency Use](#group-one---emergency-use)
-   * [Group Two - Routine Messages](#group-two---routine-messages)
 - [1.10 HANDLING INSTRUCTIONS REFERENCE](#110-handling-instructions-reference)
 <!-- TOC END -->
 
@@ -44,7 +21,6 @@ The standard ARRL message format is used to send written amateur radio messages 
 
 A message is considered a "formal" radiogram when completed with a correctly formatted preamble, address, text and signature. Stations in the system are not obligated to handle incomplete or improperly formatted messages.
 
-<!-- TOC ANCHOR --><a name="message-structure"></a>
 ### Message Structure
 The ARRL standard message consists of four main parts:
 1. **PREAMBLE**: Information to track the message
@@ -52,14 +28,12 @@ The ARRL standard message consists of four main parts:
 3. **TEXT**: The message information
 4. **SIGNATURE**: The party for whom the message was originated (with optional service/reply "Op Note")
 
-<!-- TOC ANCHOR --><a name="character-rules"></a>
 ### Character Rules
 The ARRL radiogram consists of GROUPS using ONLY three character types:
 - **LETTERS** (all upper case)
 - **FIGURES** (numbers)
 - **SLASHES** (/) - used to separate characters within a group
 
-<!-- TOC ANCHOR --><a name="special-substitutions"></a>
 ### Special Substitutions
 - **"X"** - substitute for a period (never used as last group of text)
 - **"R"** - substitute for decimal point within figure groups (7013R5 = 7013.5)
@@ -88,7 +62,6 @@ DIANA                                      (SIGNATURE)
 
 All messages must have a preamble containing tracking information that remains with the message to delivery point.
 
-<!-- TOC ANCHOR --><a name="preamble-components"></a>
 ### Preamble Components
 ```
 NR   PREC  [HX]   STN-ORIG  CK   PLACE-ORIG  [TIME]  MON  DAY
@@ -97,14 +70,12 @@ NR   PREC  [HX]   STN-ORIG  CK   PLACE-ORIG  [TIME]  MON  DAY
 
 **Bracketed items [HX] and [TIME] are OPTIONAL**
 
-<!-- TOC ANCHOR --><a name="121-message-number-nr"></a>
 #### 1.2.1 Message Number (NR)
 - Selected by originating station
 - Digits only, no letters or leading zeros
 - Usually begun with 1 at start of year/month
 - For SERVICE messages: precede with "SVC " (space after)
 
-<!-- TOC ANCHOR --><a name="122-precedence-prec"></a>
 #### 1.2.2 Precedence (PREC)
 Message priority handling order:
 - **EMERGENCY** (spelled out): Life/death urgency, absence of commercial facilities
@@ -114,7 +85,6 @@ Message priority handling order:
 
 **Exercise Messages**: Precede with "TEST" (TEST R, TEST P, TEST EMERGENCY)
 
-<!-- TOC ANCHOR --><a name="123-handling-instructions-hx---optional"></a>
 #### 1.2.3 Handling Instructions [HX] - OPTIONAL
 Used by originator to specify special handling:
 - **HXA[number]**: Collect landline delivery authorized within [number] miles
@@ -125,32 +95,27 @@ Used by originator to specify special handling:
 - **HXF[date]**: Hold delivery until [date]
 - **HXG**: No toll calls required; cancel and service if expense involved
 
-<!-- TOC ANCHOR --><a name="124-station-of-origin-stn-orig"></a>
 #### 1.2.4 Station of Origin (STN-ORIG)
 - Call sign of amateur station creating the message
 - Only punctuation allowed: slash after call + number (W1AW/3)
 - Service messages return to this station
 
-<!-- TOC ANCHOR --><a name="125-check-ck"></a>
 #### 1.2.5 Check (CK)
 Number of word groups in TEXT:
 - **Standard**: Just the number (12)
 - **With ARL**: "ARL" precedes number (ARL 12) when ARRL Numbered Radiograms used
 - **Corrections**: Original preserved with amendment (13/12)
 
-<!-- TOC ANCHOR --><a name="126-place-of-origin"></a>
 #### 1.2.6 Place of Origin
 - Location of person for whom message created (not station location)
 - City and standard 2-letter state abbreviation
 - No punctuation symbols allowed
 
-<!-- TOC ANCHOR --><a name="127-time-filed-time---optional"></a>
 #### 1.2.7 Time Filed [TIME] - OPTIONAL
 - Only when filing time is important
 - 24-hour format + "Z" (UTC) or time zone (2215EDT)
 - "L" acceptable for local time (2215L)
 
-<!-- TOC ANCHOR --><a name="128-129-monthday-filed-monday"></a>
 #### 1.2.8-1.2.9 Month/Day Filed (MON/DAY)
 - **Month**: 3-letter abbreviation (JAN, FEB, MAR, etc.)
 - **Day**: Figures only, no leading zeros
@@ -169,7 +134,6 @@ RIVER CITY MD 00789        (City, 2-letter state, ZIP)
 OP NOTE WORKDAY ONLY      (Optional delivery instructions)
 ```
 
-<!-- TOC ANCHOR --><a name="special-addressing-cases"></a>
 ### Special Addressing Cases
 - **Children**: Include parent's name
 - **International**: Check third-party traffic agreements
@@ -181,7 +145,6 @@ OP NOTE WORKDAY ONLY      (Optional delivery instructions)
 
 The actual message content framed by "BREAK" (voice) or <BT> (CW):
 
-<!-- TOC ANCHOR --><a name="punctuation-rules"></a>
 ### Punctuation Rules
 - **X**: Period substitute (not last group)
 - **R**: Decimal point in numbers (146R670)
@@ -189,12 +152,10 @@ The actual message content framed by "BREAK" (voice) or <BT> (CW):
 - **DASH**: Special separators
 - **Other**: Spelled out (QUERY, COMMA, EXCLAMATION)
 
-<!-- TOC ANCHOR --><a name="word-group-counting"></a>
 ### Word Group Counting
 ANY GROUP of consecutive characters with spaces before/after = ONE GROUP
 - Examples: "X 73" = 2 groups, "145R67" = 1 group, "555 5678" = 2 groups
 
-<!-- TOC ANCHOR --><a name="arrl-numbered-radiograms"></a>
 ### ARRL Numbered Radiograms
 - Always preceded by "ARL" (ARL SIXTY TWO)
 - Spell out numbers completely
@@ -212,7 +173,6 @@ N1ABC ATSIGN DOMAIN DOT NET             (Optional contact info)
 OP NOTE REPLY VIA EMAIL ADDRESS ABOVE   (Optional handling note)
 ```
 
-<!-- TOC ANCHOR --><a name="signature-rules"></a>
 ### Signature Rules
 - Same punctuation rules as TEXT
 - May include multiple lines (address, phone, etc.)
@@ -232,7 +192,6 @@ Handling stations must maintain records in blocks 5-9:
 <!-- TOC ANCHOR --><a name="17-originating-messages"></a>
 ## 1.7 ORIGINATING MESSAGES
 
-<!-- TOC ANCHOR --><a name="requirements"></a>
 ### Requirements
 - Only with permission from the originating party
 - Complete addressee information
@@ -240,7 +199,6 @@ Handling stations must maintain records in blocks 5-9:
 - Proper precedence assignment
 - Legal content compliance
 
-<!-- TOC ANCHOR --><a name="legal-considerations"></a>
 ### Legal Considerations
 - No business traffic
 - No encrypted/coded content
@@ -255,11 +213,9 @@ When messages cannot be delivered:
 2. **Deliver** it, or  
 3. **Service** it back to originating station
 
-<!-- TOC ANCHOR --><a name="arl-sixty-seven-format"></a>
 ### ARL SIXTY SEVEN Format
 "Your message number [number] undeliverable because of [reason]. Please advise."
 
-<!-- TOC ANCHOR --><a name="service-message-rules"></a>
 ### Service Message Rules
 - Preceded by "SVC" and space (optional current practice)
 - Same precedence as original message
@@ -271,13 +227,11 @@ When messages cannot be delivered:
 
 Pre-coded messages for common situations:
 
-<!-- TOC ANCHOR --><a name="group-one---emergency-use"></a>
 ### Group One - Emergency Use
 - **ARL ONE**: Everyone safe here. Please don't worry
 - **ARL SEVEN**: Please reply by Amateur Radio through amateur delivering this message
 - **ARL EIGHT**: Need additional mobile/portable equipment for immediate emergency use
 
-<!-- TOC ANCHOR --><a name="group-two---routine-messages"></a>
 ### Group Two - Routine Messages  
 - **ARL FORTY SIX**: Greetings on your birthday and best wishes for many more to come
 - **ARL FIFTY**: Greetings by Amateur Radio
