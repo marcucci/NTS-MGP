@@ -1,5 +1,31 @@
 # CHAPTER 1 - THE ARRL MESSAGE FORMAT
 
+<!-- TOC START -->
+- [1.0 INTRODUCTION](#10-introduction)
+- [1.1 MESSAGE STRUCTURE](#11-message-structure)
+   * [1.1.1 PREAMBLE](#111-preamble)
+   * [1.1.2 ADDRESS](#112-address)
+   * [1.1.3 TEXT](#113-text)
+   * [1.1.4 SIGNATURE](#114-signature)
+- [1.2 PREAMBLE PART](#12-preamble-part)
+   * [1.2.1 Message Number (NR)](#121-message-number-nr)
+   * [1.2.2 Precedence (PREC)](#122-precedence-prec)
+   * [1.2.3 Handling Instructions \[HX\] - OPTIONAL](#123-handling-instructions-hx---optional)
+   * [1.2.4 Station of Origin (STN-ORIG)](#124-station-of-origin-stn-orig)
+   * [1.2.5 Check (CK)](#125-check-ck)
+   * [1.2.6 Place of Origin](#126-place-of-origin)
+   * [1.2.7 Time Filed \[TIME\] - OPTIONAL](#127-time-filed-time---optional)
+   * [1.2.8-1.2.9 Month/Day Filed (MON/DAY)](#128-129-monthday-filed-monday)
+- [1.3 ADDRESS PART](#13-address-part)
+- [1.4 TEXT PART](#14-text-part)
+- [1.5 SIGNATURE PART](#15-signature-part)
+- [1.6 MESSAGE RECORDS](#16-message-records)
+- [1.7 ORIGINATING MESSAGES](#17-originating-messages)
+- [1.8 SERVICE MESSAGES](#18-service-messages)
+- [1.9 ARRL NUMBERED RADIOGRAMS](#19-arrl-numbered-radiograms)
+- [1.10 HANDLING INSTRUCTIONS REFERENCE](#110-handling-instructions-reference)
+<!-- TOC END -->
+
 ## 1.0 INTRODUCTION
 
 The standard ARRL message format is used to send written amateur radio messages throughout the National Traffic System (ARRL NTS) and independent nets. The format is standardized to provide a uniform means of originating, handling, and tracking messages.
