@@ -7,6 +7,12 @@
 - [3.4 QSK OPERATIONS](#34-qsk-operations)
 - [3.5 BOOKING MESSAGES ON CW](#35-booking-messages-on-cw)
 - [3.6 MULTIPLE MESSAGES](#36-multiple-messages)
+- [3.7 STATION OPERATIONS](#37-station-operations)
+- [3.8 ERROR CORRECTION](#38-error-correction)
+- [3.9 PROSIGN AND ABBREVIATION REFERENCE](#39-prosign-and-abbreviation-reference)
+- [3.10 SPECIAL CW PROCEDURES](#310-special-cw-procedures)
+- [3.11 EMERGENCY PROCEDURES](#311-emergency-procedures)
+- [3.12 QUALITY CONTROL](#312-quality-control)
 <!-- TOC END -->
 
 <!-- TOC ANCHOR --><a name="31-introduction"></a>
@@ -246,4 +252,185 @@ Send in precedence order:
 
 ### 3.6.2 Progress Tracking
 ```
-[After first message]: MORE 3    (3 more messages
+[After first message]: MORE 3    (3 more messages)
+[After second message]: MORE 2    (2 more messages)
+[After third message]: MORE 1     (1 more message)
+[After last message]: NO MORE     (All complete)
+```
+
+<!-- TOC ANCHOR --><a name="37-station-operations"></a>
+## 3.7 STATION OPERATIONS
+
+### 3.7.1 On Net Frequency
+- Brief exchanges as directed by NCS
+- Acknowledge assignments with call signs
+- Return to net when complete
+
+### 3.7.2 Off Net Operations
+
+#### Establishing Contact
+```
+W2XYZ DE N1ABC QTC 2 K        (Calling with 2 messages)
+N1ABC DE W2XYZ QRV K          (Ready to copy)
+W2XYZ DE N1ABC QTC 1P 1R K    (1 Priority, 1 Routine)
+```
+
+#### Frequency Changes
+```
+N1ABC DE W2XYZ QSY 14085 K    (Move to 14085)
+W2XYZ DE N1ABC QSY 14085 K    (Confirm frequency change)
+```
+
+### 3.7.3 Returning to Net
+```
+[Net frequency]
+NCS DE N1ABC QRU              (Returning, no traffic)
+or
+NCS DE N1ABC QTC 1            (Returning, 1 message for reassignment)
+```
+
+<!-- TOC ANCHOR --><a name="38-error-correction"></a>
+## 3.8 ERROR CORRECTION
+
+### 3.8.1 Immediate Correction
+```
+TX: THANKS FOR MESSAG <BK>     (Error in transmission)
+TX: E <AR>                     (Correction)
+RX: <SN>                       (Roger)
+TX: X HOPE TO SEE YOU...       (Continue)
+```
+
+### 3.8.2 Fill Procedures
+```
+RX: WA HAMFEST                 (Word after HAMFEST)
+TX: X                          (X)
+RX: <SN>                       (Roger)
+
+RX: AA HOPE                    (All after HOPE)  
+TX: TO SEE YOU AT HAMFEST X 73 (All after HOPE)
+RX: QSL                        (Confirmed)
+```
+
+### 3.8.3 Check Verification
+```
+RX: QTB                        (First initials)
+TX: T F M                      (Thanks For Message)
+RX: QSL CK 12                  (Confirmed check 12)
+```
+
+<!-- TOC ANCHOR --><a name="39-prosign-and-abbreviation-reference"></a>
+## 3.9 PROSIGN AND ABBREVIATION REFERENCE
+
+### 3.9.1 Traffic Handling Prosigns
+```
+<BT>    Break (message part separator)
+<AR>    End of message
+<SK>    End of contact
+<KN>    Go ahead (specific station)
+<K>     Go ahead (any station)
+<BK>    Break in
+<AS>    Wait/stand by
+```
+
+### 3.9.2 Common Abbreviations
+```
+AGN     Again
+CFM     Confirm
+CK      Check  
+DE      From/This is
+HV      Have
+IMI     Repeat
+NIL     Nothing
+PBL     Preamble
+RPT     Repeat
+SIG     Signature
+TXT     Text
+UR      Your/You're
+WA      Word after
+WB      Word before
+```
+
+### 3.9.3 Net Q-Signals
+```
+QNI     Check into net
+QNV     Establish contact, move off frequency
+QNB     Act as relay
+QNC     All stations copy
+QND     Net is directed
+QNF     Net is free
+QNG     Take over as net control
+QNH     Your net frequency is
+QNO     Change to another frequency
+QNP     Unable to copy you
+QNQ     Move frequency and wait
+QNS     Following stations are excused
+QNT     I request permission to leave net
+QNU     Net has traffic for you
+QNX     You are excused from net
+QNY     Shift to another frequency
+QNZ     Zero beat your signal with mine
+```
+
+<!-- TOC ANCHOR --><a name="310-special-cw-procedures"></a>
+## 3.10 SPECIAL CW PROCEDURES
+
+### 3.10.1 Mixed Groups
+Groups containing letters and numbers:
+```
+146R52   - Send as: 146R52 (no special indication needed)
+N2ABC    - Send as: N2ABC (call signs are obvious)
+34TH     - Send as: 34TH (mixed group)
+```
+
+### 3.10.2 Email Addresses  
+```
+W3ABC ATSIGN DOMAIN DOT COM
+(Sent exactly as written - no @ symbol used)
+```
+
+### 3.10.3 Numbered Radiograms
+```
+ARL FORTY SIX    (Always spell out numbers)
+ARL SIXTY TWO CHRISTMAS  (With filled blank)
+```
+
+<!-- TOC ANCHOR --><a name="311-emergency-procedures"></a>
+## 3.11 EMERGENCY PROCEDURES
+
+### 3.11.1 Emergency Break-in
+```
+<BK> <BK> <BK> EMERGENCY <BK> <BK> <BK>
+```
+
+### 3.11.2 Emergency Priority
+- Emergency traffic takes absolute priority
+- All other traffic suspended
+- Resume only when emergency traffic cleared
+
+### 3.11.3 Emergency Acknowledgment
+```
+STA EMERGENCY DE [call] QRV    (Emergency station ready)
+```
+
+<!-- TOC ANCHOR --><a name="312-quality-control"></a>
+## 3.12 QUALITY CONTROL
+
+### 3.12.1 Accuracy Standards
+- Perfect copy required
+- All fills must be resolved
+- Check verification mandatory
+- Clean, readable handwriting essential
+
+### 3.12.2 Speed Considerations
+- Match receiving station capability
+- Accuracy more important than speed
+- Allow time for proper copying
+- Use QSZ if receiving station requests slower speed
+
+### 3.12.3 Professional Standards
+- Maintain consistent keying
+- Use proper prosigns and procedures
+- Acknowledge all transmissions appropriately
+- Keep transmissions concise and accurate
+
+This chapter establishes CW as a precise, efficient mode for traffic handling, with procedures that ensure accurate message transmission while maintaining professional operating standards.
