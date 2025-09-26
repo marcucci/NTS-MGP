@@ -1,10 +1,8 @@
-# Project Title
-
-Abbreviated version of the ARRL National Traffic System (NTS) Methods and Practices Guidelines (MPG)
+# Abbreviated version of the ARRL National Traffic System (NTS) Methods and Practices Guidelines (MPG)
 
 ## Description
 
-This responitory is an abbreviated version written in markdown of the ARRL's  NTS Methods and Practices Guidelines (NTS MPG), which is attached to the ARRL Public Service Communications Manual (PSCM) as Appendix B, and is the working reference manual on Message Formatting, Message Handling, and Traffic Net Procedures in the NTS and NTSD. The origional document is [published on the ARRL's web site](https://ema.arrl.org/wp-content/uploads/2020/09/NTS_MPG2014.pdf) and is 484 pages long.
+This responitory is an abbreviated version written in markdown of the [Amateur Radio Relay League](https://arrl.org) (ARRL) [National Traffic System](https://www.arrl.org/nts) (NTS) Methods and Practices Guidelines (MPG), which is attached to the ARRL Public Service Communications Manual (PSCM) as Appendix B, and is the working reference manual on Message Formatting, Message Handling, and Traffic Net Procedures in the NTS and NTSD. The origional document is [published on the ARRL's web site](https://ema.arrl.org/wp-content/uploads/2020/09/NTS_MPG2014.pdf) and is 484 pages long.
 
 This abbreviated version was writting with the assistance of multiple AI algorythimss and was intended to provide a quick refrence for amateur radio operators who are familiar with the NTS MPGs but whom may be looking for a quick answer to seldom used processes. Becasue this was written with AI, it may, and likely does, contain some errors. The official document from the ARRL should be used as the official refrence guideline.
 
