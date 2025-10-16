@@ -45,8 +45,8 @@ We love contributions! Please feel free to contribute by submitting high quality
       <img src="https://github.com/marcucci.png" width="100px" alt=""/><br />
       <b>David Marcucci</b><br />
       <i>Author</i><br />
-      <a href="https://github.com/marcucci">GitHub</a>
-      <a href="https://www.qrz.com/db/KC1TLF">QRZ</a>
+      <a href="https://github.com/marcucci">GitHub</a><br>
+      <a href="https://www.qrz.com/db/KC1TLF">QRZ.com</a>
     </td>
   </tr>
 </table>
